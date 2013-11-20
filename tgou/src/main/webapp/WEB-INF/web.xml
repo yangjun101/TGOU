@@ -22,7 +22,7 @@
     Author: Liang Ding
 -->
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-    <listener>
+  <!--   <listener>
         <listener-class>org.b3log.solo.SoloServletListener</listener-class>
     </listener>
     
@@ -105,7 +105,7 @@
         <servlet-name>HTTPRequestDispatcher</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
-    
+ -->    
     <!-- Error Pages -->
     <error-page>
         <error-code>404</error-code>
@@ -119,5 +119,9 @@
         <error-code>500</error-code>
         <location>/error/500.html</location>
     </error-page>
+
+	<welcome-file-list>
+		<welcome-file>welcome.html</welcome-file>
+	</welcome-file-list>
 
 </web-app>
